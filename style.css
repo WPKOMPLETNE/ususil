@@ -36,3 +36,46 @@ Version: 1.1
 .wc-block-grid__products {
 	    justify-content: center;
 }
+.relativni {position:relative;}
+.site-header {
+    box-shadow: 0 0 25px -10px #999;
+	z-index: 999;
+}
+
+.mapka {margin-bottom:-1px;}
+
+
+.site-info {border-top:1px solid #222}
+.product_list_widget li {
+	margin-bottom:20px !important;
+}
+.wpmchimpa-feedback {display:none;}
+#wpmchimpaw-1 form {margin-bottom:0 !important;}
+.menu-item a::after {
+    display: block;
+    font-size: 65%;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    height: 20px;
+    margin: -55px 0 0 0;
+}
+.menu-item-7018 a::after {
+    content: 'Sušené maso';
+}
+.menu-item-8117 a::after {
+    content: 'Sušená zelenina';
+}
+.menu-item-8240 a::after {
+    content: 'Sušené ovoce';
+}
+#lista {
+	border-bottom:2px solid #000;
+}
+#lista img {
+	margin:-15px 10px 0 0;
+}
+#lista p {
+	padding:20px 0 0;
+	margin:0;
+}
