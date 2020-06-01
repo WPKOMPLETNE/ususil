@@ -53,4 +53,4 @@ add_action( 'woocommerce_before_shop_loop_item', function() {
 	
 		echo '<div class="woo-entry-new-badge">' . esc_html__( 'New', 'total' ) . '</div>';
 	
-}, 20 );
+}, 999 );
