@@ -49,8 +49,9 @@ function wpk_widgets_init() {
     ) );
 }
 
-add_action( 'woocommerce_before_shop_loop_item', function() {
-	
-		echo '<div class="woo-entry-new-badge">' . esc_html__( 'New', 'total' ) . '</div>';
-	
-}, 999 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+
+function custom_template_loop_product_link_close() {
+    echo 'Hello world!</a>';
+}
+add_action( 'woocommerce_after_shop_loop_item', 'custom_template_loop_product_link_close', 5 );
