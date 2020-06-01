@@ -48,3 +48,12 @@ function wpk_widgets_init() {
         'after_title'   => '</h3>',
     ) );
 }
+
+add_action( 'woocommerce_before_shop_loop_item_title', function() {
+	$postdate      = get_the_time( 'Y-m-d' ); // Post date
+	$postdatestamp = strtotime( $postdate );  // Timestamped post date
+	$newness       = 30;                      // Newness in days
+	if ( $post_id == 7462 )  {
+		echo '<div class="woo-entry-new-badge">' . esc_html__( 'New', 'total' ) . '</div>';
+	}
+}, 20 );
