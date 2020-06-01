@@ -49,7 +49,7 @@ function wpk_widgets_init() {
     ) );
 }
 
-add_action( 'woocommerce_before_shop_loop_item_title', function() {
+add_action( 'woocommerce_single_product_image_thumbnail_html', function() {
 	
 		echo '<div class="woo-entry-new-badge">' . esc_html__( 'New', 'total' ) . '</div>';
 	
